@@ -11,14 +11,12 @@ import com.intellij.openapi.ui.InputValidator
 import com.intellij.openapi.ui.Messages
 import kotlinx.coroutines.*
 import kotlinx.coroutines.swing.Swing
-import org.intellij.markdown.ExperimentalApi
 import org.jetbrains.annotations.NotNull
 import kotlin.coroutines.CoroutineContext
 
-@ExperimentalApi
 class WriterEffectAction : AnAction(), CoroutineScope {
     private val job = SupervisorJob()
-    
+
     override val coroutineContext: CoroutineContext = Dispatchers.Swing + job
 
     override fun actionPerformed(e: AnActionEvent) {

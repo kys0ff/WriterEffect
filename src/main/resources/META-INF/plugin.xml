@@ -1,0 +1,46 @@
+<!--suppress PluginXmlPluginLogo -->
+<idea-plugin>
+    <id>off.kys.writer_effect.WriterEffect</id>
+
+    <name>Writer Effect</name>
+
+    <vendor email="support@kys0ff.dev" url="https://github.com/kys0ff">Kys0ff</vendor>
+
+    <description><![CDATA[
+<p><b>Writer Effect</b> adds a dynamic, typewriter-style animation that rewrites the currently open file character by character — simulating the feel of live typing.</p>
+
+<p>It's perfect for:</p>
+<ul>
+  <li><b>Content creators</b> who want visually engaging code demos</li>
+  <li><b>Educators</b> preparing interactive lessons or tutorials</li>
+  <li><b>Presenters</b> showing off code in a creative, animated style</li>
+  <li><b>Developers</b> adding a bit of flair or fun to their workflow</li>
+</ul>
+
+<p>Whether you're recording a video, live-streaming, or just experimenting — Writer Effect makes your code come alive on screen.</p>
+
+<p><a href="https://github.com/kys0ff">Visit the project repository on GitHub</a> for more information, contributions, or issue reporting.</p>
+]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij"/>
+
+    <actions>
+        <!--suppress PluginXmlI18n -->
+        <action id="WriterEffectAction"
+                class="off.kys.writer_effect.WriterEffectAction"
+                text="Writer Effect: Start"
+                description="Rewrite the current file with a live typing animation">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+
+        <!--suppress PluginXmlI18n -->
+        <action id="off.kys.writer_effect.StopWriterEffectAction"
+                class="off.kys.writer_effect.StopWriterEffectAction"
+                text="Writer Effect: Stop"
+                description="Stop the animation and restore the original file content">
+            <add-to-group group-id="MainToolbarGeneralActionsGroup" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>

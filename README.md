@@ -89,7 +89,7 @@ Please refer to the project repository for licensing information.
 
 ## Support
 
-For support, bug reports, or feature requests, please visit the project's GitHub repository or contact the developer at support@kys0ff.dev.
+For support, bug reports, or feature requests, please visit the project's GitHub repository or contact the developer at idk683120@gmail.com.
 
 ---
 
